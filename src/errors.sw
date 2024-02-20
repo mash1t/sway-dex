@@ -7,6 +7,8 @@ pub enum InitError {
     /// The asset pair has not been set.
     AssetPairNotSet: (),
     /// The input and output assets are the same.
+    IdenticalAssetss: (),
+    /// The input and output assets are the same.
     IdenticalAssets: (),
 }
 
@@ -30,6 +32,7 @@ pub enum TransactionError {
     DesiredAmountTooHigh: u64,
     /// The desired amount is too low.
     DesiredAmountTooLow: u64,
+    DesiredAmountTooLoww: u64,
     /// The deposit amount was not greater than zero.
     ExpectedNonZeroDeposit: AssetId,
     /// The reserve amount is too low.
