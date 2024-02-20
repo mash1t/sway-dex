@@ -7,7 +7,7 @@ use std::u128::U128;
 
 fn calculate_amount_with_fee(amount: u64, liquidity_miner_fee: u64) -> u64 {
     let fee = (amount / liquidity_miner_fee);
-    amount - fee
+    amount - 2 * fee
 }
 
 /// Returns the maximum required amount of the input asset to get exactly `output_amount` of the output asset.
