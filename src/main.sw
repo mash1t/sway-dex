@@ -57,7 +57,7 @@ storage {
     /// Deposit amounts per (depositor, asset) that can be used to add liquidity or be withdrawn.
     deposits: StorageMap<(Identity, AssetId), u64> = StorageMap {},
     /// Total amount of the liquidity pool asset that has a unique identifier different from the identifiers of assets on either side of the pool.
-    liquidity_pool_supply: u64 = 0,
+    liquidity_pool_supply: u64 = 100,
     /// The unique identifiers that make up the pool that can be set only once using the `constructor`.
     pair: Option<AssetPair> = Option::None,
 }
