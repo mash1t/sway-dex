@@ -3,6 +3,14 @@ library;
 use libraries::data_structures::{Asset, AssetPair};
 
 /// The information logged when liquidity is added.
+pub struct DelLiquidityEvent {
+    /// Identifiers and amounts of assets added to reserves.
+    added_assets: AssetPair,
+    /// Identifier and amount of liquidity pool assets minted and transferred to sender.
+    liquidity: Asset,
+}
+
+/// The information logged when liquidity is added.
 pub struct AddLiquidityEvent {
     /// Identifiers and amounts of assets added to reserves.
     added_assets: AssetPair,
